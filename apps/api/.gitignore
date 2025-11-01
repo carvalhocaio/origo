@@ -10,4 +10,5 @@ wheels/
 .venv/
 
 # Others
-.turbo
+.turbo/
+.ruff_cache/
