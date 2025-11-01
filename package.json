@@ -23,8 +23,8 @@
   },
   "lint-staged": {
     "apps/api/**/*.py": [
-      "cd apps/api && uv run ruff check --fix",
-      "cd apps/api && uv run ruff format"
+      "bash -c 'cd apps/api && uv run ruff check --fix \"$@\"' --",
+      "bash -c 'cd apps/api && uv run ruff format \"$@\"' --"
     ],
     "apps/web/src/**/*.{ts,tsx,js,jsx,json,css}": [
       "biome check --write --no-errors-on-unmatched"
