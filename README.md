@@ -129,7 +129,7 @@ in `apps/api/main.py` if needed.
 
 ## 📝 License
 
-This project is licensed under the ISC License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
