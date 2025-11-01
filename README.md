@@ -2,7 +2,7 @@
 
 A modern full-stack monorepo template with FastAPI and Next.js, powered by Turborepo.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 ### Frontend (`apps/web`)
 - **[Next.js 16](https://nextjs.org/)** - React framework for production
@@ -22,7 +22,7 @@ A modern full-stack monorepo template with FastAPI and Next.js, powered by Turbo
 - **[Husky](https://typicode.github.io/husky/)** - Git hooks
 - **[lint-staged](https://github.com/lint-staged/lint-staged)** - Run linters on staged files
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **Node.js** 18+ and npm
 - **Python** 3.12+
@@ -33,7 +33,7 @@ Install uv:
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-## 🏁 Getting Started
+## Getting Started
 
 1. **Clone the repository**
    ```bash
@@ -55,7 +55,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:8000
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 origo/
@@ -77,7 +77,7 @@ origo/
 └── turbo.json              # Turborepo configuration
 ```
 
-## 🛠️ Available Scripts
+## Available Scripts
 
 ### Root
 - `npm run dev` - Start all apps in development mode
@@ -95,7 +95,7 @@ origo/
 - `make lint` - Check code with Ruff
 - `make format` - Format and fix code with Ruff
 
-## 🔧 Configuration
+## Configuration
 
 ### Linting & Formatting
 
@@ -114,12 +114,12 @@ The FastAPI backend is configured to accept requests from
 `http://localhost:3000` by default. Update the CORS settings
 in `apps/api/main.py` if needed.
 
-## 📚 Documentation
+## Documentation
 
 - **API Documentation**: http://localhost:8000/docs (when API is running)
 - **Alternative API Docs**: http://localhost:8000/redoc
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -127,11 +127,11 @@ in `apps/api/main.py` if needed.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 This template combines the best practices from modern web development,
 leveraging the power of:
