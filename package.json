@@ -9,13 +9,25 @@
   ],
   "scripts": {
     "dev": "turbo run dev --parallel",
-    "build": "turbo run build"
+    "build": "turbo run build",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "npm@11.6.1",
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
     "turbo": "^2.6.0"
+  },
+  "lint-staged": {
+    "apps/api/**/*.py": [
+      "cd apps/api && uv run ruff check --fix",
+      "cd apps/api && uv run ruff format"
+    ],
+    "apps/web/src/**/*.{ts,tsx,js,jsx,json,css}": [
+      "biome check --write --no-errors-on-unmatched"
+    ]
   }
 }
