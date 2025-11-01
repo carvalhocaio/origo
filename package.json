@@ -1,0 +1,21 @@
+{
+  "name": "origo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "npm@11.6.1",
+  "devDependencies": {
+    "turbo": "^2.6.0"
+  }
+}
