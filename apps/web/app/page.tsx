@@ -1,17 +1,15 @@
 "use client"
 
 import { useQuery } from "@tanstack/react-query"
+import { apiClient } from "./lib/api/client"
 
 interface ApiResponse {
 	message: string
 }
 
 async function fetchApi(): Promise<ApiResponse> {
-	const response = await fetch("http://localhost:8000/")
-	if (!response.ok) {
-		throw new Error("Failed to fetch data")
-	}
-	return response.json()
+	const response = await apiClient.get("/")
+	return response.data
 }
 
 export default function Home() {
@@ -30,7 +28,8 @@ export default function Home() {
 
 	return (
 		<div>
-			<h1>API Response</h1>
+			<h1>Origo</h1>
+			<h2>API Response</h2>
 			<pre>{JSON.stringify(data, null, 2)}</pre>
 		</div>
 	)
