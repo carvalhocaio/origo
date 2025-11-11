@@ -8,3 +8,6 @@ package-lock.json
 # Environment variables
 .env
 .env*.local
+
+# Test coverage
+coverage/

@@ -60,6 +60,17 @@
       ],
       "outputs": []
     },
+    "test": {
+      "dependsOn": ["^test"],
+      "inputs": [
+        "**/*.ts",
+        "**/*.tsx",
+        "**/*.test.*",
+        "**/*.spec.*",
+        "vitest.config.*"
+      ],
+      "outputs": ["coverage/**"]
+    },
     "clean": {
       "cache": false
     }

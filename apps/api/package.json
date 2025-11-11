@@ -9,10 +9,14 @@
     "dev": "bun --watch src/server.ts",
     "build": "bun build src/server.ts --outdir dist --target bun",
     "start": "bun src/server.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage",
     "lint": "biome check .",
     "format": "biome check --write .",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf dist .turbo node_modules"
+    "clean": "rm -rf dist .turbo node_modules coverage"
   },
   "keywords": [],
   "author": "",
