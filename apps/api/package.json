@@ -7,7 +7,7 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "bun --watch src/server.ts",
-    "build": "bun build src/server.ts --outdir dist --target bun",
+    "build": "bun build src/server.ts --outdir dist --target bun --external '*'",
     "start": "bun src/server.ts",
     "test": "vitest run",
     "test:watch": "vitest",
