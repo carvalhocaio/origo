@@ -46,9 +46,15 @@ The server will start on `http://localhost:3333` with hot reload enabled.
 | Script | Description |
 |--------|-------------|
 | `bun run dev` | Start development server with hot reload |
+| `bun run build` | Build for production |
 | `bun run start` | Start production server |
-| `bun run format` | Format and lint code with Biome |
-| `bun run lint` | Lint code with Biome (no auto-fix) |
+| `bun run test` | Run tests once |
+| `bun run test:watch` | Run tests in watch mode |
+| `bun run test:ui` | Run tests with Vitest UI |
+| `bun run test:coverage` | Run tests with coverage report |
+| `bun run lint` | Lint code with Biome |
+| `bun run format` | Format code with Biome |
+| `bun run typecheck` | Type check with TypeScript |
 
 ## API Documentation
 
