@@ -14,20 +14,19 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "packageManager": "npm@11.6.1",
+  "license": "MIT",
+  "packageManager": "bun@1.1.38",
   "devDependencies": {
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
     "turbo": "^2.6.0"
   },
   "lint-staged": {
-    "apps/api/**/*.py": [
-      "bash -c 'cd apps/api && uv run ruff check --fix \"$@\"' --",
-      "bash -c 'cd apps/api && uv run ruff format \"$@\"' --"
+    "apps/api/**/*.{ts,tsx,js,jsx}": [
+      "bash -c 'cd apps/api && bun run biome check --write --no-errors-on-unmatched \"$@\"' --"
     ],
-    "apps/web/src/**/*.{ts,tsx,js,jsx,json,css}": [
-      "biome check --write --no-errors-on-unmatched"
+    "apps/web/**/*.{ts,tsx,js,jsx,json,css}": [
+      "bash -c 'cd apps/web && bun run biome check --write --no-errors-on-unmatched \"$@\"' --"
     ]
   }
 }

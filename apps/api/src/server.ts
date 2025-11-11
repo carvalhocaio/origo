@@ -48,7 +48,7 @@ app.get(
 			},
 		},
 	},
-	async function handler(request, reply) {
+	async function handler(_request, reply) {
 		return reply.status(200).send({ message: "Hello from Origo API!" })
 	},
 )
