@@ -4,3 +4,7 @@ node_modules/
 package-lock.json
 *.lock
 !bun.lock
+
+# Environment variables
+.env
+.env*.local

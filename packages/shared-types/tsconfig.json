@@ -1,10 +1,9 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "target": "ESNext",
-    "moduleDetection": "force",
-    "jsx": "react-jsx"
+    "lib": ["ES2022"],
+    "target": "ES2022",
+    "moduleDetection": "force"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
